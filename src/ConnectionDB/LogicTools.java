@@ -16,7 +16,7 @@ public class LogicTools {
 
         if (tripTime < 0) {
             tripTimeClass = TripTimeClass.NEGATIVE;
-        } else if (tripTime < 100) {
+        } else if (tripTime < 60) {
             tripTimeClass = TripTimeClass.MIN_TRIP;
         } else if (tripTime < 499) {
             tripTimeClass = TripTimeClass.SHORT1_TRIP;
@@ -24,9 +24,9 @@ public class LogicTools {
             tripTimeClass = TripTimeClass.SHORT2_TRIP;
         } else if (tripTime < 1999) {
             tripTimeClass = TripTimeClass.MEAN1_TRIP;
-        } else if (tripTime < 2999) {
+        } else if (tripTime < 6999) {
             tripTimeClass = TripTimeClass.MEAN2_TRIP;
-        } else if (tripTime > 2999) {
+        } else if (tripTime > 7000) {
             tripTimeClass = TripTimeClass.LONG_TRIP;
         }
         return tripTimeClass;

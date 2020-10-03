@@ -108,6 +108,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         BtnSave1 = new rojeru_san.RSButton();
         jScrollPane13 = new javax.swing.JScrollPane();
         tableData = new javax.swing.JTable();
+        BtnSave3 = new rojeru_san.RSButton();
         panelRegle = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         tr = new DoubleSpinner();
@@ -204,6 +205,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         tableDistrDelete = new javax.swing.JTable();
         BtnSave4 = new rojeru_san.RSButton();
         BtnSave5 = new rojeru_san.RSButton();
+        BtnSave6 = new rojeru_san.RSButton();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         tableTime = new javax.swing.JTable();
@@ -226,6 +228,9 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         tableDelete = new javax.swing.JTable();
         BtnElimin = new rojeru_san.RSButton();
         BtnElimin1 = new rojeru_san.RSButton();
+        jScrollPane14 = new javax.swing.JScrollPane();
+        tableDelete1 = new javax.swing.JTable();
+        BtnElimin2 = new rojeru_san.RSButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         C0 = new javax.swing.JLabel();
@@ -344,7 +349,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
                 BtnSave2ActionPerformed(evt);
             }
         });
-        panelTabel.add(BtnSave2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 720, -1, -1));
+        panelTabel.add(BtnSave2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 720, -1, -1));
 
         BtnSave1.setBackground(new java.awt.Color(102, 102, 102));
         BtnSave1.setText("History");
@@ -374,6 +379,16 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jScrollPane13.setViewportView(tableData);
 
         panelTabel.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1740, 720));
+
+        BtnSave3.setBackground(new java.awt.Color(102, 102, 102));
+        BtnSave3.setText("Reduction");
+        BtnSave3.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnSave3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSave3ActionPerformed(evt);
+            }
+        });
+        panelTabel.add(BtnSave3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, -1, -1));
 
         Matrix.addTab("Table Data", panelTabel);
 
@@ -1032,7 +1047,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
                 BtnSave4ActionPerformed(evt);
             }
         });
-        jPanel4.add(BtnSave4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 740, -1, -1));
+        jPanel4.add(BtnSave4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 740, -1, -1));
 
         BtnSave5.setBackground(new java.awt.Color(102, 102, 102));
         BtnSave5.setText("History");
@@ -1043,6 +1058,16 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
             }
         });
         jPanel4.add(BtnSave5, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 740, -1, -1));
+
+        BtnSave6.setBackground(new java.awt.Color(102, 102, 102));
+        BtnSave6.setText("Redaction");
+        BtnSave6.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnSave6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSave6ActionPerformed(evt);
+            }
+        });
+        jPanel4.add(BtnSave6, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 740, -1, -1));
 
         Matrix.addTab("Result Distrubition", jPanel4);
 
@@ -1276,7 +1301,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ObjectID"
+                "ObjectID ALL Rules"
             }
         ));
         tableDelete.setFocusable(false);
@@ -1287,7 +1312,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         tableDelete.getTableHeader().setReorderingAllowed(false);
         jScrollPane3.setViewportView(tableDelete);
 
-        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1760, 720));
+        jPanel2.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 0, 370, 720));
 
         BtnElimin.setBackground(new java.awt.Color(102, 102, 102));
         BtnElimin.setText("eliminate duplicates");
@@ -1308,6 +1333,35 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
             }
         });
         jPanel2.add(BtnElimin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 720, 280, -1));
+
+        tableDelete1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        tableDelete1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ObjectIDRedactionRules"
+            }
+        ));
+        tableDelete1.setFocusable(false);
+        tableDelete1.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        tableDelete1.setRowHeight(25);
+        tableDelete1.setSelectionBackground(new java.awt.Color(255, 255, 0));
+        tableDelete1.setShowVerticalLines(false);
+        tableDelete1.getTableHeader().setReorderingAllowed(false);
+        jScrollPane14.setViewportView(tableDelete1);
+
+        jPanel2.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 370, 720));
+
+        BtnElimin2.setBackground(new java.awt.Color(102, 102, 102));
+        BtnElimin2.setText("eliminate duplicates");
+        BtnElimin2.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnElimin2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnElimin2ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(BtnElimin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 720, 280, -1));
 
         Matrix.addTab("Erroeneous &Metrics", jPanel2);
 
@@ -1644,7 +1698,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    
    totalmin.setEnabled(false);
    totalmax.setEnabled(false);
-       
+      SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);  
        improvement.setEnabled(false);
    }
    else if(radioTrip.isSelected()){
@@ -1663,7 +1718,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    
    extra.setEnabled(false);
    mta.setEnabled(false);
-   
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    totalmin.setEnabled(false);
    totalmax.setEnabled(false);
      
@@ -1685,7 +1741,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    mta.setEnabled(false);
   
      dmin.setEnabled(false);
-   
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    improvement.setEnabled(false);
    
    }
@@ -1708,7 +1765,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    extra.setEnabled(false);
    mta.setEnabled(false);
    improvement.setEnabled(false);
-   
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    }
    else if(radioPaymment .isSelected()){
        pymin.setEnabled(true);
@@ -1726,7 +1784,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    mta.setEnabled(false);
    improvement.setEnabled(false);
   dmin.setEnabled(false);
-      
+      SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false); 
    }
    else if(radioP .isSelected()){
         psmin.setEnabled(true);
@@ -1744,7 +1803,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    mta.setEnabled(false);
    improvement.setEnabled(false);
   dmin.setEnabled(false);
-     
+      SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    }
    else if(radioMta .isSelected()){
        mta.setEnabled(true);
@@ -1764,7 +1824,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
  
    extra.setEnabled(false);
      dmin.setEnabled(false);
-  
+   SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    improvement.setEnabled(false);
    
    }
@@ -1784,7 +1845,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    extra.setEnabled(false);
    mta.setEnabled(false);
      dmin.setEnabled(false);
- 
+  SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    
    }
    
@@ -1805,7 +1867,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    pymin.setEnabled(false);
    pymax.setEnabled(true);
    mta.setEnabled(false);
-   
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
      dmin.setEnabled(false);
    }
    else if(radioDoloc .isSelected()){
@@ -1822,9 +1885,49 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
    extra.setEnabled(false);
    mta.setEnabled(false);
    
-   
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
    }
      
+   else if(radioExtra .isSelected()){
+       extra.setEnabled(true);
+       improvement.setEnabled(false);
+        
+   totalmin.setEnabled(false);
+   totalmax.setEnabled(true);
+   tr.setEnabled(false);
+   vimin.setEnabled(false);
+   
+
+   psmin.setEnabled(false);
+  
+   pmin.setEnabled(false);
+   
+   pymin.setEnabled(false);
+   pymax.setEnabled(true);
+   mta.setEnabled(false);
+    SpnTripTimeMax1.setEnabled(false);
+       SpnTripTimeMin1.setEnabled(false);
+     dmin.setEnabled(false);
+   }
+   else if(radioTripTime1 .isSelected()){
+       SpnTripTimeMax1.setEnabled(true);
+       SpnTripTimeMin1.setEnabled(true);
+         dmin.setEnabled(false);
+       improvement.setEnabled(false);    
+   totalmin.setEnabled(false);
+   totalmax.setEnabled(false);
+   tr.setEnabled(false);
+   vimin.setEnabled(false);
+   psmin.setEnabled(false);
+   pmin.setEnabled(false);
+   pymin.setEnabled(false);
+   pymax.setEnabled(false);
+   extra.setEnabled(false);
+   mta.setEnabled(false);
+   
+   
+   }
    
    
    
@@ -1848,7 +1951,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
          groupButton.add(radiovendor);
           groupButton.add(radioTrip);
            groupButton.add(radioTotal);
-         
+           groupButton.add(radioTripTime1); // zedthaaaaaaaaaaaaaaa %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
          groupButton.add(radioPaymment);
           
             groupButton.add(radioPuloc);
@@ -2009,7 +2112,90 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSave1ActionPerformed
 
     private void BtnSave2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSave2ActionPerformed
-        operationDataBase.loadTime(tableData, tableDelete);
+      //  operationDataBase.getObjectID(tableData, tableDelete);
+        test=true;
+        Vector<ObjectId> list=new Vector<ObjectId>();
+        if(radiovendor.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioP.isSelected())
+        {
+           for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioPuloc.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioDoloc.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);        }
+
+        else if(radioPaymment.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioMta.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioImpro.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioTrip.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioTotal.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+        else if(radioExtra.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete, list);
+        }
+       
        
     }                                        
 
@@ -2098,10 +2284,10 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         }
 
     }//GEN-LAST:event_BtnSave2ActionPerformed
-static boolean test;
+  static boolean test;
     private void BtnEliminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEliminActionPerformed
       DefaultTableModel model=(DefaultTableModel) tableDelete.getModel();
-       
+     
      if(test){
       for(int i=0;i<tableDelete.getModel().getRowCount();i++)
       {
@@ -2118,8 +2304,6 @@ static boolean test;
      }
      test=false;
       Tools.showMessage(tableDelete.getModel().getRowCount()+"");
-       
-      
     }//GEN-LAST:event_BtnEliminActionPerformed
 
     private void BtnTAmountActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTAmountActionPerformed
@@ -2344,9 +2528,9 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     }//GEN-LAST:event_BtnTrpDistActionPerformed
 
     private void BtnSave4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSave4ActionPerformed
-         operationDataBase.loadTime(tableDistrDelete, tableDelete);
+      //   operationDataBase.getObjectID(tableDistrDelete, tableDelete);
         
-       /*test=true;
+       test=true;
         Vector<ObjectId> list=new Vector<ObjectId>();
         if(radioDistPassCount.isSelected())
         {
@@ -2372,15 +2556,15 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
             }
             new operationDataBase().fillFautSearch(tableDelete, list);
         }
-        else(radioTripTime1.isSelected())
+        else if(radioTripTime1.isSelected())
        {
             for(int i=0;i<tableDistrDelete.getModel().getRowCount();i++)
             {
                 list.add((ObjectId) tableDistrDelete.getModel().getValueAt(i,0));
             }
-            new operationDataBase().loadTime(tableDistrDelete,tableDelete);
+            new operationDataBase().fillFautSearch(tableDelete, list);
         }
-        }  */      // TODO add your handling code here:
+              // TODO add your handling code here:
     }//GEN-LAST:event_BtnSave4ActionPerformed
 
     private void radioTimeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radioTimeMouseClicked
@@ -2449,6 +2633,153 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
              C14.setText("35%");
        // TODO add your handling code here:
     }//GEN-LAST:event_btnCalculateActionPerformed
+// redaction without diplicates p
+  static boolean test2;
+    private void BtnElimin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin2ActionPerformed
+     DefaultTableModel model2=(DefaultTableModel) tableDelete1.getModel();
+       
+     if(test2){
+      for(int k=0;k<tableDelete1.getModel().getRowCount();k++)
+      {
+        ObjectId b=(ObjectId) tableDelete1.getModel().getValueAt(k, 0);
+        for(int f=1;f<tableDelete1.getModel().getRowCount();f++)
+        {
+        if(b.equals(tableDelete1.getModel().getValueAt(f, 0)))
+        {
+         model2.removeRow(f);
+        }
+                
+        }
+      }
+     }
+     test2=false;
+      Tools.showMessage(tableDelete1.getModel().getRowCount()+"");   // TODO add your handling code here:
+    }//GEN-LAST:event_BtnElimin2ActionPerformed
+
+    private void BtnSave3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSave3ActionPerformed
+ // operationDataBase.getObjectID(tableData, tableDelete1);
+  test2=true;
+        Vector<ObjectId> list=new Vector<ObjectId>();
+        if(radiovendor.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioP.isSelected())
+        {
+           for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioPuloc.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioDoloc.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);        }
+
+        else if(radioPaymment.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioMta.isSelected())
+        {
+            for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioImpro.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioTrip.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioTotal.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioExtra.isSelected())
+        {
+             for(int i=0;i<tableData.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableData.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+// TODO add your handling code here:
+    }//GEN-LAST:event_BtnSave3ActionPerformed
+
+    private void BtnSave6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSave6ActionPerformed
+ //operationDataBase.getObjectID(tableDistrDelete, tableDelete1);       
+ test2=true;
+        Vector<ObjectId> list=new Vector<ObjectId>();
+        if(radioDistPassCount.isSelected())
+        {
+            for(int i=0;i<tableDistrDelete.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableDistrDelete.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioDistTotAmount.isSelected())
+        {
+           for(int i=0;i<tableDistrDelete.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableDistrDelete.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioDistTripdist.isSelected())
+        {
+            for(int i=0;i<tableDistrDelete.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableDistrDelete.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        }
+        else if(radioTripTime1.isSelected())
+       {
+            for(int i=0;i<tableDistrDelete.getModel().getRowCount();i++)
+            {
+                list.add((ObjectId) tableDistrDelete.getModel().getValueAt(i,0));
+            }
+            new operationDataBase().fillFautSearch(tableDelete1, list);
+        } // TODO add your handling code here:
+    }//GEN-LAST:event_BtnSave6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2491,13 +2822,16 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private rojeru_san.RSButton BtnDistCalc;
     private rojeru_san.RSButton BtnElimin;
     private rojeru_san.RSButton BtnElimin1;
+    private rojeru_san.RSButton BtnElimin2;
     private rojeru_san.RSButton BtnPCount;
     private rojeru_san.RSButton BtnPassCount;
     private rojeru_san.RSButton BtnRef;
     private rojeru_san.RSButton BtnSave1;
     private rojeru_san.RSButton BtnSave2;
+    private rojeru_san.RSButton BtnSave3;
     private rojeru_san.RSButton BtnSave4;
     private rojeru_san.RSButton BtnSave5;
+    private rojeru_san.RSButton BtnSave6;
     private rojeru_san.RSButton BtnTAmount;
     private rojeru_san.RSButton BtnTotAmount;
     private rojeru_san.RSButton BtnTotAmount1;
@@ -2603,6 +2937,7 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JScrollPane jScrollPane11;
     private javax.swing.JScrollPane jScrollPane12;
     private javax.swing.JScrollPane jScrollPane13;
+    private javax.swing.JScrollPane jScrollPane14;
     private javax.swing.JScrollPane jScrollPane15;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
@@ -2638,6 +2973,7 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JTable tableData;
     private javax.swing.JTable tableData1;
     private javax.swing.JTable tableDelete;
+    private javax.swing.JTable tableDelete1;
     private javax.swing.JTable tableDistrDelete;
     private javax.swing.JTable tableExtra;
     private javax.swing.JTable tableImprovementSurcharge;

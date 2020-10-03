@@ -4,7 +4,14 @@
  * and open the template in the editor.
  */
 package ConnectionDB;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
+import org.joda.time.DateTime;
+import org.joda.time.Days;
+import org.joda.time.Hours;
+import org.joda.time.Minutes;
+import org.joda.time.Seconds;
 import applicationmaster.Tools;
 import com.mongodb.BasicDBList;
 import com.mongodb.BasicDBObject;
@@ -15,6 +22,7 @@ import java.lang.reflect.Array;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Hashtable;
 import java.util.List;
 import java.util.Set;
@@ -71,15 +79,32 @@ public class operationDataBase {
                 String tpepdate = (String) dbo.get("tpep_pickup_date");
                 String tpepofdate = (String) dbo.get("tpep_dropof_date");
 
-                String tf = String.valueOf((Integer.parseInt(tpepofdate.substring(11, 19).substring(0, 2)) * 3600
+            /*  String tf = String.valueOf((Integer.parseInt(tpepofdate.substring(11, 19).substring(0, 2)) * 3600
                     + (Integer.parseInt(tpepofdate.substring(11, 19).substring(3, 5)) * 60 + (Integer.parseInt(tpepofdate.substring(11, 19).substring(6, 8))))) - (Integer.parseInt(tpepdate.substring(11, 19).substring(0, 2)) * 3600
                     + (Integer.parseInt(tpepdate.substring(11, 19).substring(3, 5)) * 60 + (Integer.parseInt(tpepdate.substring(11, 19).substring(6, 8))))));
                 int tf2;
 
-                tf2 = Integer.parseInt(tf);
+                tf2 = Integer.parseInt(tf);*/
+                int tf3;
+                SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+	Date d1 = null;
+	Date d2 = null;
+
+	
+		d1 = format.parse(tpepdate);
+		d2 = format.parse(tpepofdate);
+
+		DateTime dt1 = new DateTime(d1);
+		DateTime dt2 = new DateTime(d2);
+             tf3= (((Hours.hoursBetween(dt1, dt2).getHours() % 24)*3600)+((Minutes.minutesBetween(dt1, dt2).getMinutes() % 60 )*60)+(Seconds.secondsBetween(dt1, dt2).getSeconds() % 60)) ;
+	
+
+	 
+              
 
                 /* Interval class */
-                String intervalClass = LogicTools.calculateIntervalTrip(tf2).toString();
+                String intervalClass = LogicTools.calculateIntervalTrip(tf3).toString();
 
                 /* Interval class Count */
                 if (intervalClass.equals(LogicTools.TripTimeClass.NEGATIVE.toString()))
@@ -226,7 +251,7 @@ public class operationDataBase {
                 String cngsur = "";
 
                 //rows.add(new Object[]{_ID, vndID, tpepdate, tpepofdate, tf2, intervalClass, pc, td, rc, fwd, plID, dlID, pt, fa, ext, mtx, tam, tla, impsur, ttam, cngsur});
-                model.addRow(new Object[]{_ID, vndID, tpepdate, tpepofdate, tf2, intervalClass, 0, pc, td,intervalClass2,0, rc, fwd, plID, dlID, pt, fa, ext, mtx, tam, tla, impsur, ttam,intervalClass3,0, cngsur});
+                model.addRow(new Object[]{_ID, vndID, tpepdate, tpepofdate, tf3, intervalClass, 0, pc, td,intervalClass2,0, rc, fwd, plID, dlID, pt, fa, ext, mtx, tam, tla, impsur, ttam,intervalClass3,0, cngsur});
 
                 i += 1;
             }
@@ -1939,9 +1964,15 @@ if( min>val || val>max)
         table2.setModel(model);
      }
       
-      public static void compTab(JTable tab1,JTable tab2){
+        public static void elimateD(JTable tab1,JTable m)
+      {
+         ArrayList<JTable> dup;
+         dup = new ArrayList<>(Arrays.asList(tab1));
+         Hashtable<String , ArrayList<Integer>> diplicates = new Hashtable<>();
+        
+
+         HashSet<String> dupp= new HashSet<String>();
       }
-      
       public static void loadMatrix(JTable tab1,JTable tab2,JTable tab3,JTable tab4,JTable tab5,JTable tab6,JTable tab7,JTable tab8,JTable Matrix)
       {
          ArrayList<JTable> rules;
