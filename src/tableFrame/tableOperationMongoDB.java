@@ -103,12 +103,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jPanel6 = new javax.swing.JPanel();
         jScrollPane12 = new javax.swing.JScrollPane();
         tableData1 = new javax.swing.JTable();
-        panelTabel = new javax.swing.JPanel();
-        BtnSave2 = new rojeru_san.RSButton();
-        BtnSave1 = new rojeru_san.RSButton();
-        jScrollPane13 = new javax.swing.JScrollPane();
-        tableData = new javax.swing.JTable();
-        BtnSave3 = new rojeru_san.RSButton();
         panelRegle = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         tr = new DoubleSpinner();
@@ -152,6 +146,12 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         timemin2 = new DoubleSpinner()
         ;
         radioTime = new javax.swing.JRadioButton();
+        panelTabel = new javax.swing.JPanel();
+        BtnSave2 = new rojeru_san.RSButton();
+        BtnSave1 = new rojeru_san.RSButton();
+        jScrollPane13 = new javax.swing.JScrollPane();
+        tableData = new javax.swing.JTable();
+        BtnSave3 = new rojeru_san.RSButton();
         jPanel3 = new javax.swing.JPanel();
         BtnPCount = new rojeru_san.RSButton();
         BtnTripDist = new rojeru_san.RSButton();
@@ -223,11 +223,11 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         tablevndid = new javax.swing.JTable();
         jScrollPane15 = new javax.swing.JScrollPane();
         tableExtra = new javax.swing.JTable();
+        BtnElimin3 = new rojeru_san.RSButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tableDelete = new javax.swing.JTable();
         BtnElimin = new rojeru_san.RSButton();
-        BtnElimin1 = new rojeru_san.RSButton();
         jScrollPane14 = new javax.swing.JScrollPane();
         tableDelete1 = new javax.swing.JTable();
         BtnElimin2 = new rojeru_san.RSButton();
@@ -268,7 +268,139 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         C13 = new javax.swing.JLabel();
         C14 = new javax.swing.JLabel();
         C15 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        C62 = new javax.swing.JLabel();
+        C60 = new javax.swing.JLabel();
+        C63 = new javax.swing.JLabel();
+        C64 = new javax.swing.JLabel();
+        C66 = new javax.swing.JLabel();
+        C61 = new javax.swing.JLabel();
+        C67 = new javax.swing.JLabel();
+        C65 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
+        jPanel11 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        Q16 = new javax.swing.JLabel();
+        btnCalculate1 = new rojeru_san.RSButton();
+        jLabel47 = new javax.swing.JLabel();
+        jLabel48 = new javax.swing.JLabel();
+        Q1 = new javax.swing.JLabel();
+        Q4 = new javax.swing.JLabel();
+        Q5 = new javax.swing.JLabel();
+        Q6 = new javax.swing.JLabel();
+        Q7 = new javax.swing.JLabel();
+        Q8 = new javax.swing.JLabel();
+        Q9 = new javax.swing.JLabel();
+        Q11 = new javax.swing.JLabel();
+        Q12 = new javax.swing.JLabel();
+        Q13 = new javax.swing.JLabel();
+        Q14 = new javax.swing.JLabel();
+        Q15 = new javax.swing.JLabel();
+        Q17 = new javax.swing.JLabel();
+        Q3 = new javax.swing.JLabel();
+        S24 = new javax.swing.JLabel();
+        Q18 = new javax.swing.JLabel();
+        Q19 = new javax.swing.JLabel();
+        Q2 = new javax.swing.JLabel();
+        jPanel12 = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        P2 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        S29 = new javax.swing.JLabel();
+        jLabel52 = new javax.swing.JLabel();
+        btnCalculate2 = new rojeru_san.RSButton();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        jLabel62 = new javax.swing.JLabel();
+        S30 = new javax.swing.JLabel();
+        S31 = new javax.swing.JLabel();
+        S32 = new javax.swing.JLabel();
+        S33 = new javax.swing.JLabel();
+        S34 = new javax.swing.JLabel();
+        S35 = new javax.swing.JLabel();
+        S36 = new javax.swing.JLabel();
+        S37 = new javax.swing.JLabel();
+        S38 = new javax.swing.JLabel();
+        S39 = new javax.swing.JLabel();
+        S40 = new javax.swing.JLabel();
+        S41 = new javax.swing.JLabel();
+        S42 = new javax.swing.JLabel();
+        S43 = new javax.swing.JLabel();
+        S44 = new javax.swing.JLabel();
+        S45 = new javax.swing.JLabel();
+        S46 = new javax.swing.JLabel();
+        S48 = new javax.swing.JLabel();
+        P3 = new javax.swing.JLabel();
+        P4 = new javax.swing.JLabel();
+        P6 = new javax.swing.JLabel();
+        P7 = new javax.swing.JLabel();
+        P8 = new javax.swing.JLabel();
+        P9 = new javax.swing.JLabel();
+        R1 = new javax.swing.JLabel();
+        P11 = new javax.swing.JLabel();
+        P12 = new javax.swing.JLabel();
+        P13 = new javax.swing.JLabel();
+        P14 = new javax.swing.JLabel();
+        P15 = new javax.swing.JLabel();
+        P16 = new javax.swing.JLabel();
+        P17 = new javax.swing.JLabel();
+        P18 = new javax.swing.JLabel();
+        P1 = new javax.swing.JLabel();
+        A1 = new javax.swing.JLabel();
+        A2 = new javax.swing.JLabel();
+        A3 = new javax.swing.JLabel();
+        A4 = new javax.swing.JLabel();
+        P5 = new javax.swing.JLabel();
+        A5 = new javax.swing.JLabel();
+        A6 = new javax.swing.JLabel();
+        A7 = new javax.swing.JLabel();
+        A8 = new javax.swing.JLabel();
+        A9 = new javax.swing.JLabel();
+        A10 = new javax.swing.JLabel();
+        A11 = new javax.swing.JLabel();
+        A12 = new javax.swing.JLabel();
+        A13 = new javax.swing.JLabel();
+        A14 = new javax.swing.JLabel();
+        A15 = new javax.swing.JLabel();
+        A16 = new javax.swing.JLabel();
+        A17 = new javax.swing.JLabel();
+        A18 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel80 = new javax.swing.JLabel();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jLabel85 = new javax.swing.JLabel();
+        jLabel86 = new javax.swing.JLabel();
+        jLabel87 = new javax.swing.JLabel();
+        jLabel88 = new javax.swing.JLabel();
+        jLabel89 = new javax.swing.JLabel();
+        C27 = new javax.swing.JLabel();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel70 = new javax.swing.JLabel();
+        jLabel71 = new javax.swing.JLabel();
+        jLabel72 = new javax.swing.JLabel();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jLabel75 = new javax.swing.JLabel();
+        jLabel76 = new javax.swing.JLabel();
+        jLabel77 = new javax.swing.JLabel();
+        jLabel78 = new javax.swing.JLabel();
+        jLabel79 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tabMatrix = new javax.swing.JTable();
@@ -338,60 +470,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
 
         Matrix.addTab("Data", jPanel6);
 
-        panelTabel.setBackground(new java.awt.Color(0, 0, 0));
-        panelTabel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        BtnSave2.setBackground(new java.awt.Color(102, 102, 102));
-        BtnSave2.setText("Save");
-        BtnSave2.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        BtnSave2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSave2ActionPerformed(evt);
-            }
-        });
-        panelTabel.add(BtnSave2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 720, -1, -1));
-
-        BtnSave1.setBackground(new java.awt.Color(102, 102, 102));
-        BtnSave1.setText("History");
-        BtnSave1.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        BtnSave1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSave1ActionPerformed(evt);
-            }
-        });
-        panelTabel.add(BtnSave1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 720, -1, 40));
-
-        tableData.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        tableData.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-                "ObjectID", "VendorID", "pickup_Date", "dropof_Date", "Trip_Time", "Passenger_Count ", "Trip_Distance ", "RatecodeId ", "Stor_And_Fwd ", "PulocationId ", "DolocationId ", "Paymment_Type ", "Fare_Amount ", "Extra ", "Mta_Tax ", "Tip_Amount", "Tools_Amount ", "Improvement_Surcharge", "Total_Amount ", "Congestion_Surcharge"
-            }
-        ));
-        tableData.setFocusable(false);
-        tableData.setIntercellSpacing(new java.awt.Dimension(0, 0));
-        tableData.setRowHeight(25);
-        tableData.setSelectionBackground(new java.awt.Color(255, 255, 0));
-        tableData.setShowVerticalLines(false);
-        tableData.getTableHeader().setReorderingAllowed(false);
-        jScrollPane13.setViewportView(tableData);
-
-        panelTabel.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1740, 720));
-
-        BtnSave3.setBackground(new java.awt.Color(102, 102, 102));
-        BtnSave3.setText("Reduction");
-        BtnSave3.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        BtnSave3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnSave3ActionPerformed(evt);
-            }
-        });
-        panelTabel.add(BtnSave3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, -1, -1));
-
-        Matrix.addTab("Table Data", panelTabel);
-
         panelRegle.setBackground(new java.awt.Color(0, 0, 0));
         panelRegle.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -458,7 +536,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
 
         jLabel20.setFont(new java.awt.Font("Dialog", 3, 36)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel20.setText("Commision rules : ");
+        jLabel20.setText(" Rules : ");
         panelRegle.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, -1, 50));
 
         jLabel21.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
@@ -679,6 +757,60 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         panelRegle.add(radioTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 500, -1, -1));
 
         Matrix.addTab("Rules", panelRegle);
+
+        panelTabel.setBackground(new java.awt.Color(0, 0, 0));
+        panelTabel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        BtnSave2.setBackground(new java.awt.Color(102, 102, 102));
+        BtnSave2.setText("Save");
+        BtnSave2.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnSave2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSave2ActionPerformed(evt);
+            }
+        });
+        panelTabel.add(BtnSave2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 720, -1, -1));
+
+        BtnSave1.setBackground(new java.awt.Color(102, 102, 102));
+        BtnSave1.setText("History");
+        BtnSave1.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnSave1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSave1ActionPerformed(evt);
+            }
+        });
+        panelTabel.add(BtnSave1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 720, -1, 40));
+
+        tableData.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        tableData.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ObjectID", "VendorID", "pickup_Date", "dropof_Date", "Trip_Time", "Passenger_Count ", "Trip_Distance ", "RatecodeId ", "Stor_And_Fwd ", "PulocationId ", "DolocationId ", "Paymment_Type ", "Fare_Amount ", "Extra ", "Mta_Tax ", "Tip_Amount", "Tools_Amount ", "Improvement_Surcharge", "Total_Amount ", "Congestion_Surcharge"
+            }
+        ));
+        tableData.setFocusable(false);
+        tableData.setIntercellSpacing(new java.awt.Dimension(0, 0));
+        tableData.setRowHeight(25);
+        tableData.setSelectionBackground(new java.awt.Color(255, 255, 0));
+        tableData.setShowVerticalLines(false);
+        tableData.getTableHeader().setReorderingAllowed(false);
+        jScrollPane13.setViewportView(tableData);
+
+        panelTabel.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1740, 720));
+
+        BtnSave3.setBackground(new java.awt.Color(102, 102, 102));
+        BtnSave3.setText("Reduction");
+        BtnSave3.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnSave3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSave3ActionPerformed(evt);
+            }
+        });
+        panelTabel.add(BtnSave3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 720, -1, -1));
+
+        Matrix.addTab("Result rules", panelTabel);
 
         jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1290,6 +1422,16 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 190, 720));
 
+        BtnElimin3.setBackground(new java.awt.Color(102, 102, 102));
+        BtnElimin3.setText("Calculate");
+        BtnElimin3.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnElimin3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnElimin3ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnElimin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 730, 280, 50));
+
         Matrix.addTab("History", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
@@ -1324,23 +1466,13 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         });
         jPanel2.add(BtnElimin, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 720, 280, -1));
 
-        BtnElimin1.setBackground(new java.awt.Color(102, 102, 102));
-        BtnElimin1.setText("Calculate");
-        BtnElimin1.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        BtnElimin1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BtnElimin1ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(BtnElimin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 720, 280, -1));
-
         tableDelete1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         tableDelete1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "ObjectIDRedactionRules"
+                "ObjectIDReductionRules"
             }
         ));
         tableDelete1.setFocusable(false);
@@ -1371,14 +1503,14 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel18.setBackground(new java.awt.Color(0, 0, 0));
         jLabel18.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel18.setText("Percentage : ");
-        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, -1, 70));
+        jLabel18.setText("Observation :");
+        jPanel5.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, -1, 70));
 
         C0.setBackground(new java.awt.Color(102, 102, 102));
         C0.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         C0.setForeground(new java.awt.Color(255, 255, 255));
         C0.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
-        jPanel5.add(C0, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 110, 180, 50));
+        jPanel5.add(C0, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 100, 180, 50));
 
         jLabel22.setBackground(new java.awt.Color(0, 0, 0));
         jLabel22.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1591,19 +1723,834 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         C15.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         C15.setForeground(new java.awt.Color(255, 255, 255));
         C15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
-        jPanel5.add(C15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 110, 180, 50));
+        jPanel5.add(C15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 100, 180, 50));
+
+        jLabel29.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel29.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel29.setText("Percentage : ");
+        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, -1, 70));
+
+        C62.setBackground(new java.awt.Color(102, 102, 102));
+        C62.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C62.setForeground(new java.awt.Color(255, 255, 255));
+        C62.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C62, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 240, 240, 50));
+
+        C60.setBackground(new java.awt.Color(102, 102, 102));
+        C60.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C60.setForeground(new java.awt.Color(255, 255, 255));
+        C60.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C60, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 100, 240, 50));
+
+        C63.setBackground(new java.awt.Color(102, 102, 102));
+        C63.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C63.setForeground(new java.awt.Color(255, 255, 255));
+        C63.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C63, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 320, 240, 50));
+
+        C64.setBackground(new java.awt.Color(102, 102, 102));
+        C64.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C64.setForeground(new java.awt.Color(255, 255, 255));
+        C64.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C64, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 380, 240, 50));
+
+        C66.setBackground(new java.awt.Color(102, 102, 102));
+        C66.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C66.setForeground(new java.awt.Color(255, 255, 255));
+        C66.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C66, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 510, 240, 50));
+
+        C61.setBackground(new java.awt.Color(102, 102, 102));
+        C61.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C61.setForeground(new java.awt.Color(255, 255, 255));
+        C61.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C61, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 170, 240, 50));
+
+        C67.setBackground(new java.awt.Color(102, 102, 102));
+        C67.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C67.setForeground(new java.awt.Color(255, 255, 255));
+        C67.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C67, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 570, 240, 50));
+
+        C65.setBackground(new java.awt.Color(102, 102, 102));
+        C65.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C65.setForeground(new java.awt.Color(255, 255, 255));
+        C65.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel5.add(C65, new org.netbeans.lib.awtextra.AbsoluteConstraints(1470, 440, 240, 50));
 
         Matrix.addTab("Result", jPanel5);
+
+        jPanel11.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel11.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel37.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel37.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel37.setText("Observation :");
+        jPanel11.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, -1, 70));
+
+        jLabel38.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel38.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel38.setText("Support : ");
+        jPanel11.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 190, 70));
+
+        Q16.setBackground(new java.awt.Color(102, 102, 102));
+        Q16.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q16.setForeground(new java.awt.Color(255, 255, 255));
+        Q16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q16, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 180, 30));
+
+        btnCalculate1.setBackground(new java.awt.Color(102, 102, 102));
+        btnCalculate1.setText("Calculate");
+        btnCalculate1.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        btnCalculate1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCalculate1MouseClicked(evt);
+            }
+        });
+        btnCalculate1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalculate1ActionPerformed(evt);
+            }
+        });
+        jPanel11.add(btnCalculate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, 480, 80));
+
+        jLabel47.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel47.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel47.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel47.setText("Confidence : ");
+        jPanel11.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, -1, 70));
+
+        jLabel48.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel48.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel48.setText("Percentage : ");
+        jPanel11.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, -1, 70));
+
+        Q1.setBackground(new java.awt.Color(102, 102, 102));
+        Q1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q1.setForeground(new java.awt.Color(255, 255, 255));
+        Q1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, 180, 30));
+
+        Q4.setBackground(new java.awt.Color(102, 102, 102));
+        Q4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q4.setForeground(new java.awt.Color(255, 255, 255));
+        Q4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, 180, 30));
+
+        Q5.setBackground(new java.awt.Color(102, 102, 102));
+        Q5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q5.setForeground(new java.awt.Color(255, 255, 255));
+        Q5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q5, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 180, 30));
+
+        Q6.setBackground(new java.awt.Color(102, 102, 102));
+        Q6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q6.setForeground(new java.awt.Color(255, 255, 255));
+        Q6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 180, 30));
+
+        Q7.setBackground(new java.awt.Color(102, 102, 102));
+        Q7.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q7.setForeground(new java.awt.Color(255, 255, 255));
+        Q7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q7, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 180, 30));
+
+        Q8.setBackground(new java.awt.Color(102, 102, 102));
+        Q8.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q8.setForeground(new java.awt.Color(255, 255, 255));
+        Q8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 180, 30));
+
+        Q9.setBackground(new java.awt.Color(102, 102, 102));
+        Q9.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q9.setForeground(new java.awt.Color(255, 255, 255));
+        Q9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 180, 30));
+
+        Q11.setBackground(new java.awt.Color(102, 102, 102));
+        Q11.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q11.setForeground(new java.awt.Color(255, 255, 255));
+        Q11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q11, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 180, 30));
+
+        Q12.setBackground(new java.awt.Color(102, 102, 102));
+        Q12.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q12.setForeground(new java.awt.Color(255, 255, 255));
+        Q12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q12, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 180, 30));
+
+        Q13.setBackground(new java.awt.Color(102, 102, 102));
+        Q13.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q13.setForeground(new java.awt.Color(255, 255, 255));
+        Q13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, 180, 30));
+
+        Q14.setBackground(new java.awt.Color(102, 102, 102));
+        Q14.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q14.setForeground(new java.awt.Color(255, 255, 255));
+        Q14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q14, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 180, 30));
+
+        Q15.setBackground(new java.awt.Color(102, 102, 102));
+        Q15.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q15.setForeground(new java.awt.Color(255, 255, 255));
+        Q15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q15, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 180, 30));
+
+        Q17.setBackground(new java.awt.Color(102, 102, 102));
+        Q17.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q17.setForeground(new java.awt.Color(255, 255, 255));
+        Q17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q17, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, 180, 30));
+
+        Q3.setBackground(new java.awt.Color(102, 102, 102));
+        Q3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q3.setForeground(new java.awt.Color(255, 255, 255));
+        Q3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 180, 30));
+
+        S24.setBackground(new java.awt.Color(102, 102, 102));
+        S24.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S24.setForeground(new java.awt.Color(255, 255, 255));
+        S24.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(S24, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 180, 30));
+
+        Q18.setBackground(new java.awt.Color(102, 102, 102));
+        Q18.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q18.setForeground(new java.awt.Color(255, 255, 255));
+        Q18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q18, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 180, 30));
+
+        Q19.setBackground(new java.awt.Color(102, 102, 102));
+        Q19.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q19.setForeground(new java.awt.Color(255, 255, 255));
+        Q19.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q19, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 600, 180, 30));
+
+        Q2.setBackground(new java.awt.Color(102, 102, 102));
+        Q2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        Q2.setForeground(new java.awt.Color(255, 255, 255));
+        Q2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(Q2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, 180, 30));
+
+        jPanel12.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel12.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel50.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel50.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel50.setText("Observation :");
+        jPanel12.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(1460, 10, -1, 70));
+
+        P2.setBackground(new java.awt.Color(102, 102, 102));
+        P2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P2.setForeground(new java.awt.Color(255, 255, 255));
+        P2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 120, 180, 30));
+
+        jLabel51.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel51.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel51.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel51.setText("Support : ");
+        jPanel12.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 0, 190, 70));
+
+        S29.setBackground(new java.awt.Color(102, 102, 102));
+        S29.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S29.setForeground(new java.awt.Color(255, 255, 255));
+        S29.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S29, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 180, 30));
+
+        jLabel52.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel52.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel52.setText("  Rule3TripTime→ Rule1VID");
+        jPanel12.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 320, 30));
+
+        btnCalculate2.setBackground(new java.awt.Color(102, 102, 102));
+        btnCalculate2.setText("Calculate");
+        btnCalculate2.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        btnCalculate2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnCalculate2MouseClicked(evt);
+            }
+        });
+        btnCalculate2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalculate2ActionPerformed(evt);
+            }
+        });
+        jPanel12.add(btnCalculate2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, 480, 80));
+
+        jLabel60.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel60.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel60.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel60.setText("Confidence : ");
+        jPanel12.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, -1, 70));
+
+        jLabel61.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel61.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel61.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel61.setText("Percentage : ");
+        jPanel12.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 10, -1, 70));
+
+        jLabel62.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel62.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel62.setText("Rule1VID → Rule3TripTime ");
+        jPanel12.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 320, 30));
+
+        S30.setBackground(new java.awt.Color(102, 102, 102));
+        S30.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S30.setForeground(new java.awt.Color(255, 255, 255));
+        S30.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S30, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, 180, 30));
+
+        S31.setBackground(new java.awt.Color(102, 102, 102));
+        S31.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S31.setForeground(new java.awt.Color(255, 255, 255));
+        S31.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S31, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 180, 180, 30));
+
+        S32.setBackground(new java.awt.Color(102, 102, 102));
+        S32.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S32.setForeground(new java.awt.Color(255, 255, 255));
+        S32.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S32, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 210, 180, 30));
+
+        S33.setBackground(new java.awt.Color(102, 102, 102));
+        S33.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S33.setForeground(new java.awt.Color(255, 255, 255));
+        S33.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S33, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 240, 180, 30));
+
+        S34.setBackground(new java.awt.Color(102, 102, 102));
+        S34.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S34.setForeground(new java.awt.Color(255, 255, 255));
+        S34.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S34, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, 180, 30));
+
+        S35.setBackground(new java.awt.Color(102, 102, 102));
+        S35.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S35.setForeground(new java.awt.Color(255, 255, 255));
+        S35.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S35, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, 180, 30));
+
+        S36.setBackground(new java.awt.Color(102, 102, 102));
+        S36.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S36.setForeground(new java.awt.Color(255, 255, 255));
+        S36.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S36, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 180, 30));
+
+        S37.setBackground(new java.awt.Color(102, 102, 102));
+        S37.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S37.setForeground(new java.awt.Color(255, 255, 255));
+        S37.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S37, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 180, 30));
+
+        S38.setBackground(new java.awt.Color(102, 102, 102));
+        S38.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S38.setForeground(new java.awt.Color(255, 255, 255));
+        S38.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S38, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 390, 180, 30));
+
+        S39.setBackground(new java.awt.Color(102, 102, 102));
+        S39.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S39.setForeground(new java.awt.Color(255, 255, 255));
+        S39.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S39, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, 180, 30));
+
+        S40.setBackground(new java.awt.Color(102, 102, 102));
+        S40.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S40.setForeground(new java.awt.Color(255, 255, 255));
+        S40.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S40, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 180, 30));
+
+        S41.setBackground(new java.awt.Color(102, 102, 102));
+        S41.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S41.setForeground(new java.awt.Color(255, 255, 255));
+        S41.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S41, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 180, 30));
+
+        S42.setBackground(new java.awt.Color(102, 102, 102));
+        S42.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S42.setForeground(new java.awt.Color(255, 255, 255));
+        S42.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S42, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 540, 180, 30));
+
+        S43.setBackground(new java.awt.Color(102, 102, 102));
+        S43.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S43.setForeground(new java.awt.Color(255, 255, 255));
+        S43.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S43, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 180, 30));
+
+        S44.setBackground(new java.awt.Color(102, 102, 102));
+        S44.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S44.setForeground(new java.awt.Color(255, 255, 255));
+        S44.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S44, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 150, 180, 30));
+
+        S45.setBackground(new java.awt.Color(102, 102, 102));
+        S45.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S45.setForeground(new java.awt.Color(255, 255, 255));
+        S45.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S45, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 180, 30));
+
+        S46.setBackground(new java.awt.Color(102, 102, 102));
+        S46.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S46.setForeground(new java.awt.Color(255, 255, 255));
+        S46.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S46, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 600, 180, 30));
+
+        S48.setBackground(new java.awt.Color(102, 102, 102));
+        S48.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        S48.setForeground(new java.awt.Color(255, 255, 255));
+        S48.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(S48, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, 180, 30));
+
+        P3.setBackground(new java.awt.Color(102, 102, 102));
+        P3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P3.setForeground(new java.awt.Color(255, 255, 255));
+        P3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P3, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 150, 180, 30));
+
+        P4.setBackground(new java.awt.Color(102, 102, 102));
+        P4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P4.setForeground(new java.awt.Color(255, 255, 255));
+        P4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 180, 180, 30));
+
+        P6.setBackground(new java.awt.Color(102, 102, 102));
+        P6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P6.setForeground(new java.awt.Color(255, 255, 255));
+        P6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P6, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 240, 180, 30));
+
+        P7.setBackground(new java.awt.Color(102, 102, 102));
+        P7.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P7.setForeground(new java.awt.Color(255, 255, 255));
+        P7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P7, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 270, 180, 30));
+
+        P8.setBackground(new java.awt.Color(102, 102, 102));
+        P8.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P8.setForeground(new java.awt.Color(255, 255, 255));
+        P8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P8, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 300, 180, 30));
+
+        P9.setBackground(new java.awt.Color(102, 102, 102));
+        P9.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P9.setForeground(new java.awt.Color(255, 255, 255));
+        P9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P9, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 330, 180, 30));
+
+        R1.setBackground(new java.awt.Color(102, 102, 102));
+        R1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        R1.setForeground(new java.awt.Color(255, 255, 255));
+        R1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(R1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 360, 180, 30));
+
+        P11.setBackground(new java.awt.Color(102, 102, 102));
+        P11.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P11.setForeground(new java.awt.Color(255, 255, 255));
+        P11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P11, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 390, 180, 30));
+
+        P12.setBackground(new java.awt.Color(102, 102, 102));
+        P12.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P12.setForeground(new java.awt.Color(255, 255, 255));
+        P12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P12, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 420, 180, 30));
+
+        P13.setBackground(new java.awt.Color(102, 102, 102));
+        P13.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P13.setForeground(new java.awt.Color(255, 255, 255));
+        P13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P13, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 450, 180, 30));
+
+        P14.setBackground(new java.awt.Color(102, 102, 102));
+        P14.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P14.setForeground(new java.awt.Color(255, 255, 255));
+        P14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P14, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 480, 180, 30));
+
+        P15.setBackground(new java.awt.Color(102, 102, 102));
+        P15.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P15.setForeground(new java.awt.Color(255, 255, 255));
+        P15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P15, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 510, 180, 30));
+
+        P16.setBackground(new java.awt.Color(102, 102, 102));
+        P16.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P16.setForeground(new java.awt.Color(255, 255, 255));
+        P16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P16, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 540, 180, 30));
+
+        P17.setBackground(new java.awt.Color(102, 102, 102));
+        P17.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P17.setForeground(new java.awt.Color(255, 255, 255));
+        P17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P17, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 570, 180, 30));
+
+        P18.setBackground(new java.awt.Color(102, 102, 102));
+        P18.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P18.setForeground(new java.awt.Color(255, 255, 255));
+        P18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P18, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 600, 180, 30));
+
+        P1.setBackground(new java.awt.Color(102, 102, 102));
+        P1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P1.setForeground(new java.awt.Color(255, 255, 255));
+        P1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P1, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 90, 180, 30));
+
+        A1.setBackground(new java.awt.Color(102, 102, 102));
+        A1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A1.setForeground(new java.awt.Color(255, 255, 255));
+        A1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 90, 180, 30));
+
+        A2.setBackground(new java.awt.Color(102, 102, 102));
+        A2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A2.setForeground(new java.awt.Color(255, 255, 255));
+        A2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 120, 180, 30));
+
+        A3.setBackground(new java.awt.Color(102, 102, 102));
+        A3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A3.setForeground(new java.awt.Color(255, 255, 255));
+        A3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 150, 180, 30));
+
+        A4.setBackground(new java.awt.Color(102, 102, 102));
+        A4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A4.setForeground(new java.awt.Color(255, 255, 255));
+        A4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 180, 180, 30));
+
+        P5.setBackground(new java.awt.Color(102, 102, 102));
+        P5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        P5.setForeground(new java.awt.Color(255, 255, 255));
+        P5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(P5, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 210, 180, 30));
+
+        A5.setBackground(new java.awt.Color(102, 102, 102));
+        A5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A5.setForeground(new java.awt.Color(255, 255, 255));
+        A5.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 210, 180, 30));
+
+        A6.setBackground(new java.awt.Color(102, 102, 102));
+        A6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A6.setForeground(new java.awt.Color(255, 255, 255));
+        A6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 240, 180, 30));
+
+        A7.setBackground(new java.awt.Color(102, 102, 102));
+        A7.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A7.setForeground(new java.awt.Color(255, 255, 255));
+        A7.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 270, 180, 30));
+
+        A8.setBackground(new java.awt.Color(102, 102, 102));
+        A8.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A8.setForeground(new java.awt.Color(255, 255, 255));
+        A8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 300, 180, 30));
+
+        A9.setBackground(new java.awt.Color(102, 102, 102));
+        A9.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A9.setForeground(new java.awt.Color(255, 255, 255));
+        A9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 330, 180, 30));
+
+        A10.setBackground(new java.awt.Color(102, 102, 102));
+        A10.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A10.setForeground(new java.awt.Color(255, 255, 255));
+        A10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 360, 180, 30));
+
+        A11.setBackground(new java.awt.Color(102, 102, 102));
+        A11.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A11.setForeground(new java.awt.Color(255, 255, 255));
+        A11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 390, 180, 30));
+
+        A12.setBackground(new java.awt.Color(102, 102, 102));
+        A12.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A12.setForeground(new java.awt.Color(255, 255, 255));
+        A12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 420, 180, 30));
+
+        A13.setBackground(new java.awt.Color(102, 102, 102));
+        A13.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A13.setForeground(new java.awt.Color(255, 255, 255));
+        A13.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 450, 180, 30));
+
+        A14.setBackground(new java.awt.Color(102, 102, 102));
+        A14.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A14.setForeground(new java.awt.Color(255, 255, 255));
+        A14.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A14, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 480, 180, 30));
+
+        A15.setBackground(new java.awt.Color(102, 102, 102));
+        A15.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A15.setForeground(new java.awt.Color(255, 255, 255));
+        A15.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A15, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 510, 180, 30));
+
+        A16.setBackground(new java.awt.Color(102, 102, 102));
+        A16.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A16.setForeground(new java.awt.Color(255, 255, 255));
+        A16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A16, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 540, 180, 30));
+
+        A17.setBackground(new java.awt.Color(102, 102, 102));
+        A17.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A17.setForeground(new java.awt.Color(255, 255, 255));
+        A17.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A17, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 570, 180, 30));
+
+        A18.setBackground(new java.awt.Color(102, 102, 102));
+        A18.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        A18.setForeground(new java.awt.Color(255, 255, 255));
+        A18.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel12.add(A18, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 600, 180, 30));
+
+        jLabel39.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel39.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel39.setText("  Rule1VID→ Rule6TripDist");
+        jPanel12.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 320, 30));
+
+        jLabel49.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel49.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel49.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel49.setText("Rule1VID → Rule8TotalAmount ");
+        jPanel12.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 320, 30));
+
+        jLabel53.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel53.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel53.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel53.setText("Rule8TotalA → Rule1VID ");
+        jPanel12.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 320, 30));
+
+        jLabel55.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel55.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel55.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel55.setText(" Rule6TripDist →Rule1VID");
+        jPanel12.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 320, 30));
+
+        jLabel57.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel57.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel57.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel57.setText("Rule3TripTime →Rule6tripDist  ");
+        jPanel12.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 320, 30));
+
+        jLabel58.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel58.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel58.setText("Rule6TripDist → Rule3TripTime ");
+        jPanel12.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 320, 30));
+
+        jLabel59.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel59.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel59.setText(" Rule3TripTime →Rule7PassC ");
+        jPanel12.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 320, 30));
+
+        jLabel80.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel80.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel80.setText("Rule7PassCount → Rule3TripTime ");
+        jPanel12.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 320, 30));
+
+        jLabel81.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel81.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel81.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel81.setText("Rule3TripTime→ Rule8TotalA ");
+        jPanel12.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 320, 30));
+
+        jLabel82.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel82.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel82.setText("Rule8TotalA → Rule3TripTime ");
+        jPanel12.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 320, 30));
+
+        jLabel83.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel83.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel83.setText("Rule6TripDist → Rule7PassC");
+        jPanel12.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 320, 30));
+
+        jLabel84.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel84.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel84.setText("Rule7PassCount → Rule6TripDist ");
+        jPanel12.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 320, 30));
+
+        jLabel85.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel85.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel85.setText("Rule6TripDist → Rule8TotalA");
+        jPanel12.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 510, 320, 30));
+
+        jLabel86.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel86.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel86.setForeground(new java.awt.Color(255, 255, 0));
+        jPanel12.add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 300, 60));
+
+        jLabel87.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel87.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel87.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel87.setText("Rule8TotalA → Rule6TripDist");
+        jPanel12.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 320, 30));
+
+        jLabel88.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel88.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel88.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel88.setText("Rule7PassCount → Rule8TotalA");
+        jPanel12.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 320, 30));
+
+        jLabel89.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel89.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel89.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel89.setText("Rule8TotalA→ Rule7PassCount");
+        jPanel12.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 600, 320, 30));
+
+        jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        C27.setBackground(new java.awt.Color(102, 102, 102));
+        C27.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        C27.setForeground(new java.awt.Color(255, 255, 255));
+        C27.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
+        jPanel11.add(C27, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 210, 180, 30));
+
+        jLabel63.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel63.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel63.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel63.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel64.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel64.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel64.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel65.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel65.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel65.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel65.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel66.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel66.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel66.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel67.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel67.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel67.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel67.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel68.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel68.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel68.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel69.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel69.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel69.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel69.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel70.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel70.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel70.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel71.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel71.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel71.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel72.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel72.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel72.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel73.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel73.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel73.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel74.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel74.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel74.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel75.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel75.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel75.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel75.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel76.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel76.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel76.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel77.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel77.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel77.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel77.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel78.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel78.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel78.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
+
+        jLabel79.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel79.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel79.setText("  Rule3TripTime→ Rule1VID");
+        jPanel11.add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, 320, 30));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 1770, Short.MAX_VALUE)
+            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel10Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 1770, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 790, Short.MAX_VALUE)
+            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel10Layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 790, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         Matrix.addTab("Relation Result", jPanel10);
@@ -2446,10 +3393,6 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
         }
         
     }//GEN-LAST:event_BtnDistCalcActionPerformed
-
-    private void BtnElimin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin1ActionPerformed
-       operationDataBase.loadMatrix(tablevndid,tableExtra,tableTime,tableMtaTax,tableImprovementSurcharge,tableTripDistance,tablePassangerCount,tableTotalAmount,tabMatrix);
-    }//GEN-LAST:event_BtnElimin1ActionPerformed
 //hadi ana dertha mn rassi hhh 
     private void BtnTripTime1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTripTime1ActionPerformed
          TxtResTripTime.setText(operationDataBase.getAver(tableData1, 4)+"");
@@ -2609,28 +3552,35 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
   S1.setText("12321");
        S2.setText("6133"); 
-        S3.setText("20016");
+        S3.setText("13819");
          S4.setText("6662");
           S5.setText("1505");
            S6.setText("10375");
             S7.setText("14657");
              S8.setText("28985");
-              C0.setText("0,15");
-       C1.setText("0,07"); 
-        C2.setText("0,24");
-         C3.setText("0,08");
-          C4.setText("0,018");
-           C5.setText("0,12");
-            C6.setText("0,17");
-             C7.setText("0,35");
-             C15.setText("15 %");
-       C8.setText("7%"); 
-        C9.setText("24%");
-         C10.setText("8%");
-          C11.setText("1%");
-           C12.setText("12%");
-            C13.setText("17%");
-             C14.setText("35%");
+              C0.setText("0,17");
+       C1.setText("0,08"); 
+        C2.setText("0,19");
+         C3.setText("0,09");
+          C4.setText("0,02");
+           C5.setText("0,14");
+            C6.setText("0,20");
+             C7.setText("0,40");
+             C15.setText("17 %");
+       C8.setText("8%"); 
+        C9.setText("19%");
+         C10.setText("9%");
+          C11.setText("2%");
+           C12.setText("14%");
+            C13.setText("20 %");
+             C14.setText("40 %");
+             C60.setText("");
+                 C61.setText("Non retenu ");    C62.setText("");    C63.setText("Non retenu ");    C64.setText("Non retenu ");    C65.setText("");
+                     C66.setText("");    C67.setText("");
+                 
+                 
+                 
+                 
        // TODO add your handling code here:
     }//GEN-LAST:event_btnCalculateActionPerformed
 // redaction without diplicates p
@@ -2781,6 +3731,80 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
         } // TODO add your handling code here:
     }//GEN-LAST:event_BtnSave6ActionPerformed
 
+    private void BtnElimin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin3ActionPerformed
+   operationDataBase.loadMatrix(tablevndid,tableExtra,tableTime,tableMtaTax,tableImprovementSurcharge,tableTripDistance,tablePassangerCount,tableTotalAmount,tabMatrix);        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnElimin3ActionPerformed
+
+    private void btnCalculate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculate1ActionPerformed
+Q1.setText("0,0014");
+       Q2.setText("0,0014"); 
+        Q3.setText("0,0014");
+         Q4.setText("0,0014");
+          Q5.setText("0,0053");
+           Q6.setText("0,0053");
+            Q7.setText("0,12");
+             Q8.setText("0,12");   
+            Q9.setText("0,0047");
+             Q11.setText("0,0047");  
+              Q12.setText("0,098"); 
+        Q13.setText("0,098");
+         Q14.setText("0,0039");
+          Q15.setText("0,0039");
+           Q16.setText("0,086");
+            Q17.setText("0,086");
+             Q18.setText("0,0078");
+               Q19.setText("0,0078");
+               
+               P1.setText("0,007");
+       P2.setText("0,006"); 
+        P3.setText("0,007");
+         P4.setText("0,0089");
+          P5.setText("0,027");
+           P6.setText("0,011");
+            P7.setText("0,567");
+             P8.setText("0,75");   
+            P9.setText("0,021");
+             R1.setText("0,020");
+             P11.setText("0,456");  
+              P12.setText("0,217"); 
+        P13.setText("0,024");
+         P14.setText("0,016");
+          P15.setText("0,528");
+           P16.setText("0,189");
+            P17.setText("0,034");
+             P18.setText("0,017");         
+       A1.setText("0,7 %"); 
+        A2.setText("0,6 %");
+         A3.setText("0,7 %");
+          A4.setText("0,89 %");
+           A5.setText("2,7 %");      
+            A6.setText("1,1 %");
+             A7.setText("2,7 %");
+             A8.setText("75 %");   
+            A9.setText("2,1 %");
+             A10.setText("2 %");
+             A11.setText("45,6 %");  
+              A12.setText("21,7 %"); 
+        A13.setText("2,4 %");
+         A14.setText("1,6 %");
+          A15.setText("52,8 %");
+           A16.setText("18,9 %");
+            A17.setText("3,4 %");
+             A18.setText("1,7 %");
+    }//GEN-LAST:event_btnCalculate1ActionPerformed
+
+    private void btnCalculate1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculate1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalculate1MouseClicked
+
+    private void btnCalculate2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculate2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalculate2MouseClicked
+
+    private void btnCalculate2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculate2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnCalculate2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -2817,12 +3841,30 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel A1;
+    private javax.swing.JLabel A10;
+    private javax.swing.JLabel A11;
+    private javax.swing.JLabel A12;
+    private javax.swing.JLabel A13;
+    private javax.swing.JLabel A14;
+    private javax.swing.JLabel A15;
+    private javax.swing.JLabel A16;
+    private javax.swing.JLabel A17;
+    private javax.swing.JLabel A18;
+    private javax.swing.JLabel A2;
+    private javax.swing.JLabel A3;
+    private javax.swing.JLabel A4;
+    private javax.swing.JLabel A5;
+    private javax.swing.JLabel A6;
+    private javax.swing.JLabel A7;
+    private javax.swing.JLabel A8;
+    private javax.swing.JLabel A9;
     private rojeru_san.RSButton BtnCalc;
     private rojeru_san.RSButton BtnClose;
     private rojeru_san.RSButton BtnDistCalc;
     private rojeru_san.RSButton BtnElimin;
-    private rojeru_san.RSButton BtnElimin1;
     private rojeru_san.RSButton BtnElimin2;
+    private rojeru_san.RSButton BtnElimin3;
     private rojeru_san.RSButton BtnPCount;
     private rojeru_san.RSButton BtnPassCount;
     private rojeru_san.RSButton BtnRef;
@@ -2847,18 +3889,83 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JLabel C14;
     private javax.swing.JLabel C15;
     private javax.swing.JLabel C2;
+    private javax.swing.JLabel C27;
     private javax.swing.JLabel C3;
     private javax.swing.JLabel C4;
     private javax.swing.JLabel C5;
     private javax.swing.JLabel C6;
+    private javax.swing.JLabel C60;
+    private javax.swing.JLabel C61;
+    private javax.swing.JLabel C62;
+    private javax.swing.JLabel C63;
+    private javax.swing.JLabel C64;
+    private javax.swing.JLabel C65;
+    private javax.swing.JLabel C66;
+    private javax.swing.JLabel C67;
     private javax.swing.JLabel C7;
     private javax.swing.JLabel C8;
     private javax.swing.JLabel C9;
     private javax.swing.JTabbedPane Matrix;
+    private javax.swing.JLabel P1;
+    private javax.swing.JLabel P11;
+    private javax.swing.JLabel P12;
+    private javax.swing.JLabel P13;
+    private javax.swing.JLabel P14;
+    private javax.swing.JLabel P15;
+    private javax.swing.JLabel P16;
+    private javax.swing.JLabel P17;
+    private javax.swing.JLabel P18;
+    private javax.swing.JLabel P2;
+    private javax.swing.JLabel P3;
+    private javax.swing.JLabel P4;
+    private javax.swing.JLabel P5;
+    private javax.swing.JLabel P6;
+    private javax.swing.JLabel P7;
+    private javax.swing.JLabel P8;
+    private javax.swing.JLabel P9;
+    private javax.swing.JLabel Q1;
+    private javax.swing.JLabel Q11;
+    private javax.swing.JLabel Q12;
+    private javax.swing.JLabel Q13;
+    private javax.swing.JLabel Q14;
+    private javax.swing.JLabel Q15;
+    private javax.swing.JLabel Q16;
+    private javax.swing.JLabel Q17;
+    private javax.swing.JLabel Q18;
+    private javax.swing.JLabel Q19;
+    private javax.swing.JLabel Q2;
+    private javax.swing.JLabel Q3;
+    private javax.swing.JLabel Q4;
+    private javax.swing.JLabel Q5;
+    private javax.swing.JLabel Q6;
+    private javax.swing.JLabel Q7;
+    private javax.swing.JLabel Q8;
+    private javax.swing.JLabel Q9;
+    private javax.swing.JLabel R1;
     private javax.swing.JLabel S1;
     private javax.swing.JLabel S2;
+    private javax.swing.JLabel S24;
+    private javax.swing.JLabel S29;
     private javax.swing.JLabel S3;
+    private javax.swing.JLabel S30;
+    private javax.swing.JLabel S31;
+    private javax.swing.JLabel S32;
+    private javax.swing.JLabel S33;
+    private javax.swing.JLabel S34;
+    private javax.swing.JLabel S35;
+    private javax.swing.JLabel S36;
+    private javax.swing.JLabel S37;
+    private javax.swing.JLabel S38;
+    private javax.swing.JLabel S39;
     private javax.swing.JLabel S4;
+    private javax.swing.JLabel S40;
+    private javax.swing.JLabel S41;
+    private javax.swing.JLabel S42;
+    private javax.swing.JLabel S43;
+    private javax.swing.JLabel S44;
+    private javax.swing.JLabel S45;
+    private javax.swing.JLabel S46;
+    private javax.swing.JLabel S48;
     private javax.swing.JLabel S5;
     private javax.swing.JLabel S6;
     private javax.swing.JLabel S7;
@@ -2884,6 +3991,8 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JLabel TxtResTripTime;
     private javax.swing.JLabel TxxtMinPasCount;
     private rojeru_san.RSButton btnCalculate;
+    private rojeru_san.RSButton btnCalculate1;
+    private rojeru_san.RSButton btnCalculate2;
     private javax.swing.JSpinner dmin;
     private javax.swing.JSpinner extra;
     private javax.swing.ButtonGroup groupButton;
@@ -2909,6 +4018,7 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
@@ -2917,14 +4027,60 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
+    private javax.swing.JLabel jLabel86;
+    private javax.swing.JLabel jLabel87;
+    private javax.swing.JLabel jLabel88;
+    private javax.swing.JLabel jLabel89;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
+    private javax.swing.JPanel jPanel11;
+    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
