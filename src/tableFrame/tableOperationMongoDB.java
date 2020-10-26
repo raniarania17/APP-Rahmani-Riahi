@@ -142,10 +142,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         radioImpro = new javax.swing.JRadioButton();
         radioTotal = new javax.swing.JRadioButton();
         radiovendor = new javax.swing.JRadioButton();
-        jLabel19 = new javax.swing.JLabel();
-        timemin2 = new DoubleSpinner()
-        ;
-        radioTime = new javax.swing.JRadioButton();
         panelTabel = new javax.swing.JPanel();
         BtnSave2 = new rojeru_san.RSButton();
         BtnSave1 = new rojeru_san.RSButton();
@@ -224,6 +220,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jScrollPane15 = new javax.swing.JScrollPane();
         tableExtra = new javax.swing.JTable();
         BtnElimin3 = new rojeru_san.RSButton();
+        BtnElimin4 = new rojeru_san.RSButton();
         jPanel2 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         tableDelete = new javax.swing.JTable();
@@ -258,7 +255,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel36 = new javax.swing.JLabel();
         S3 = new javax.swing.JLabel();
         C2 = new javax.swing.JLabel();
-        btnCalculate = new rojeru_san.RSButton();
         jLabel27 = new javax.swing.JLabel();
         C8 = new javax.swing.JLabel();
         C9 = new javax.swing.JLabel();
@@ -282,7 +278,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel37 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
         Q16 = new javax.swing.JLabel();
-        btnCalculate1 = new rojeru_san.RSButton();
         jLabel47 = new javax.swing.JLabel();
         jLabel48 = new javax.swing.JLabel();
         Q1 = new javax.swing.JLabel();
@@ -309,7 +304,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel51 = new javax.swing.JLabel();
         S29 = new javax.swing.JLabel();
         jLabel52 = new javax.swing.JLabel();
-        btnCalculate2 = new rojeru_san.RSButton();
         jLabel60 = new javax.swing.JLabel();
         jLabel61 = new javax.swing.JLabel();
         jLabel62 = new javax.swing.JLabel();
@@ -459,7 +453,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, 1740, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 30, Short.MAX_VALUE))
+                .addGap(0, 94, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -730,31 +724,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
             }
         });
         panelRegle.add(radiovendor, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 130, -1, -1));
-
-        jLabel19.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel19.setText("Trip_Time :");
-        panelRegle.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 500, -1, 30));
-
-        timemin2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        timemin2.setAutoscrolls(true);
-        panelRegle.add(timemin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 500, 60, 40));
-
-        radioTime.setBackground(new java.awt.Color(0, 0, 0));
-        radioTime.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        radioTime.setForeground(new java.awt.Color(255, 255, 255));
-        radioTime.setText("Search By Trip_Time");
-        radioTime.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                radioTimeMouseClicked(evt);
-            }
-        });
-        radioTime.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                radioTimeActionPerformed(evt);
-            }
-        });
-        panelRegle.add(radioTime, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 500, -1, -1));
 
         Matrix.addTab("Rules", panelRegle);
 
@@ -1423,14 +1392,24 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jPanel1.add(jScrollPane15, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 190, 720));
 
         BtnElimin3.setBackground(new java.awt.Color(102, 102, 102));
-        BtnElimin3.setText("Calculate");
+        BtnElimin3.setText("Calculate Rules1");
         BtnElimin3.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
         BtnElimin3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnElimin3ActionPerformed(evt);
             }
         });
-        jPanel1.add(BtnElimin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 730, 280, 50));
+        jPanel1.add(BtnElimin3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 730, 280, 50));
+
+        BtnElimin4.setBackground(new java.awt.Color(102, 102, 102));
+        BtnElimin4.setText("calculate Rules 2");
+        BtnElimin4.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
+        BtnElimin4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnElimin4ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(BtnElimin4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 730, 280, 50));
 
         Matrix.addTab("History", jPanel1);
 
@@ -1528,7 +1507,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel26.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 0));
         jLabel26.setText("Rule1 VendorID ");
-        jPanel5.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, 200, 60));
+        jPanel5.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 90, 200, 60));
 
         C3.setBackground(new java.awt.Color(102, 102, 102));
         C3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1546,13 +1525,13 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel30.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 0));
         jLabel30.setText("Rule4 Mta Tax");
-        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 200, 60));
+        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 200, 60));
 
         jLabel31.setBackground(new java.awt.Color(0, 0, 0));
         jLabel31.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel31.setText("Rule6 Trip Distance");
-        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 270, 60));
+        jLabel31.setText("Distribution2 Trip Distance");
+        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 340, 60));
 
         S6.setBackground(new java.awt.Color(102, 102, 102));
         S6.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1570,7 +1549,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel32.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 0));
         jLabel32.setText("Rule5 Improvement surcharge ");
-        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(-50, 370, 360, 60));
+        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 360, 60));
 
         S7.setBackground(new java.awt.Color(102, 102, 102));
         S7.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1587,8 +1566,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel33.setBackground(new java.awt.Color(0, 0, 0));
         jLabel33.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel33.setText("Rule7 Passenger COunt");
-        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 510, 300, 60));
+        jLabel33.setText("Distribution3 Passenger Count");
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, -1, 60));
 
         S8.setBackground(new java.awt.Color(102, 102, 102));
         S8.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1605,8 +1584,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel34.setBackground(new java.awt.Color(0, 0, 0));
         jLabel34.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel34.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel34.setText("Rule8 Total Amount ");
-        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 570, 290, 60));
+        jLabel34.setText("Distribution4 Total Amount ");
+        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 570, 350, 60));
 
         S5.setBackground(new java.awt.Color(102, 102, 102));
         S5.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1624,7 +1603,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel35.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(255, 255, 0));
         jLabel35.setText("    Rule2 Extra  ");
-        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 240, 60));
+        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 160, 240, 60));
 
         S2.setBackground(new java.awt.Color(102, 102, 102));
         S2.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1641,8 +1620,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel36.setBackground(new java.awt.Color(0, 0, 0));
         jLabel36.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel36.setText("Rule3 Trip Time  ");
-        jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, 210, 60));
+        jLabel36.setText("Distribution1 Trip Time  ");
+        jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, 280, 60));
 
         S3.setBackground(new java.awt.Color(102, 102, 102));
         S3.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1655,21 +1634,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         C2.setForeground(new java.awt.Color(255, 255, 255));
         C2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
         jPanel5.add(C2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 240, 180, 50));
-
-        btnCalculate.setBackground(new java.awt.Color(102, 102, 102));
-        btnCalculate.setText("Calculate");
-        btnCalculate.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        btnCalculate.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCalculateMouseClicked(evt);
-            }
-        });
-        btnCalculate.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalculateActionPerformed(evt);
-            }
-        });
-        jPanel5.add(btnCalculate, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, 480, 80));
 
         jLabel27.setBackground(new java.awt.Color(0, 0, 0));
         jLabel27.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1801,21 +1765,6 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         Q16.setForeground(new java.awt.Color(255, 255, 255));
         Q16.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102), new java.awt.Color(102, 102, 102)));
         jPanel11.add(Q16, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 180, 30));
-
-        btnCalculate1.setBackground(new java.awt.Color(102, 102, 102));
-        btnCalculate1.setText("Calculate");
-        btnCalculate1.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        btnCalculate1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCalculate1MouseClicked(evt);
-            }
-        });
-        btnCalculate1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalculate1ActionPerformed(evt);
-            }
-        });
-        jPanel11.add(btnCalculate1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, 480, 80));
 
         jLabel47.setBackground(new java.awt.Color(0, 0, 0));
         jLabel47.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -1967,23 +1916,8 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel52.setBackground(new java.awt.Color(0, 0, 0));
         jLabel52.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel52.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel52.setText("  Rule3TripTime→ Rule1VID");
+        jLabel52.setText("  D1TripTime→ R1VID");
         jPanel12.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 120, 320, 30));
-
-        btnCalculate2.setBackground(new java.awt.Color(102, 102, 102));
-        btnCalculate2.setText("Calculate");
-        btnCalculate2.setFont(new java.awt.Font("Roboto Bold", 1, 24)); // NOI18N
-        btnCalculate2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnCalculate2MouseClicked(evt);
-            }
-        });
-        btnCalculate2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCalculate2ActionPerformed(evt);
-            }
-        });
-        jPanel12.add(btnCalculate2, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 670, 480, 80));
 
         jLabel60.setBackground(new java.awt.Color(0, 0, 0));
         jLabel60.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
@@ -2000,7 +1934,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel62.setBackground(new java.awt.Color(0, 0, 0));
         jLabel62.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel62.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel62.setText("Rule1VID → Rule3TripTime ");
+        jLabel62.setText("R1VID → D1TripTime ");
         jPanel12.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 320, 30));
 
         S30.setBackground(new java.awt.Color(102, 102, 102));
@@ -2324,79 +2258,79 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel39.setBackground(new java.awt.Color(0, 0, 0));
         jLabel39.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel39.setText("  Rule1VID→ Rule6TripDist");
+        jLabel39.setText("  Rule1VID→ D2TripDist");
         jPanel12.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 150, 320, 30));
 
         jLabel49.setBackground(new java.awt.Color(0, 0, 0));
         jLabel49.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel49.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel49.setText("Rule1VID → Rule8TotalAmount ");
+        jLabel49.setText("Rule1VID → D4TotalAmount ");
         jPanel12.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 210, 320, 30));
 
         jLabel53.setBackground(new java.awt.Color(0, 0, 0));
         jLabel53.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel53.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel53.setText("Rule8TotalA → Rule1VID ");
+        jLabel53.setText("D4TotalA → Rule1VID ");
         jPanel12.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 240, 320, 30));
 
         jLabel55.setBackground(new java.awt.Color(0, 0, 0));
         jLabel55.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel55.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel55.setText(" Rule6TripDist →Rule1VID");
+        jLabel55.setText(" D2TripDist →Rule1VID");
         jPanel12.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 180, 320, 30));
 
         jLabel57.setBackground(new java.awt.Color(0, 0, 0));
         jLabel57.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel57.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel57.setText("Rule3TripTime →Rule6tripDist  ");
+        jLabel57.setText("D1TripTime →D2tripDist  ");
         jPanel12.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 270, 320, 30));
 
         jLabel58.setBackground(new java.awt.Color(0, 0, 0));
         jLabel58.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel58.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel58.setText("Rule6TripDist → Rule3TripTime ");
+        jLabel58.setText("D2TripDist → D1TripTime ");
         jPanel12.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 320, 30));
 
         jLabel59.setBackground(new java.awt.Color(0, 0, 0));
         jLabel59.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel59.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel59.setText(" Rule3TripTime →Rule7PassC ");
+        jLabel59.setText("D1TripTime →D3PassC ");
         jPanel12.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 320, 30));
 
         jLabel80.setBackground(new java.awt.Color(0, 0, 0));
         jLabel80.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel80.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel80.setText("Rule7PassCount → Rule3TripTime ");
+        jLabel80.setText("D3PassCount → D1TripTime ");
         jPanel12.add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 320, 30));
 
         jLabel81.setBackground(new java.awt.Color(0, 0, 0));
         jLabel81.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel81.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel81.setText("Rule3TripTime→ Rule8TotalA ");
+        jLabel81.setText("D1TripTime→ D4TotalA ");
         jPanel12.add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 320, 30));
 
         jLabel82.setBackground(new java.awt.Color(0, 0, 0));
         jLabel82.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel82.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel82.setText("Rule8TotalA → Rule3TripTime ");
+        jLabel82.setText("D4TotalA → D1TripTime ");
         jPanel12.add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 320, 30));
 
         jLabel83.setBackground(new java.awt.Color(0, 0, 0));
         jLabel83.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel83.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel83.setText("Rule6TripDist → Rule7PassC");
+        jLabel83.setText("D2TripDist → D3PassC");
         jPanel12.add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 320, 30));
 
         jLabel84.setBackground(new java.awt.Color(0, 0, 0));
         jLabel84.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel84.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel84.setText("Rule7PassCount → Rule6TripDist ");
+        jLabel84.setText("D3PassCount → D2TripDist ");
         jPanel12.add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 320, 30));
 
         jLabel85.setBackground(new java.awt.Color(0, 0, 0));
         jLabel85.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel85.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel85.setText("Rule6TripDist → Rule8TotalA");
+        jLabel85.setText("D2TripDist → D4TotalA");
         jPanel12.add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 510, 320, 30));
 
         jLabel86.setBackground(new java.awt.Color(0, 0, 0));
@@ -2407,19 +2341,19 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jLabel87.setBackground(new java.awt.Color(0, 0, 0));
         jLabel87.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel87.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel87.setText("Rule8TotalA → Rule6TripDist");
+        jLabel87.setText("D4TotalA → D2TripDist");
         jPanel12.add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 540, 320, 30));
 
         jLabel88.setBackground(new java.awt.Color(0, 0, 0));
         jLabel88.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel88.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel88.setText("Rule7PassCount → Rule8TotalA");
+        jLabel88.setText("D3PassCount → D4TotalA");
         jPanel12.add(jLabel88, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, 320, 30));
 
         jLabel89.setBackground(new java.awt.Color(0, 0, 0));
         jLabel89.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel89.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel89.setText("Rule8TotalA→ Rule7PassCount");
+        jLabel89.setText("D4TotalA→ D3PassCount");
         jPanel12.add(jLabel89, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 600, 320, 30));
 
         jPanel11.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -2536,7 +2470,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1770, Short.MAX_VALUE)
+            .addGap(0, 1834, Short.MAX_VALUE)
             .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel10Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -2589,7 +2523,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1661, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 1725, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -2610,10 +2544,7 @@ public class tableOperationMongoDB extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(Matrix)
-                .addGap(49, 49, 49))
+            .addComponent(Matrix)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3396,8 +3327,8 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
 //hadi ana dertha mn rassi hhh 
     private void BtnTripTime1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTripTime1ActionPerformed
          TxtResTripTime.setText(operationDataBase.getAver(tableData1, 4)+"");
-        TxtMaxTripTime1.setText("10000");
-        TxtMinTripTime1.setText("-422");        // TODO add your handling code here:
+        TxtMaxTripTime1.setText("89789");
+        TxtMinTripTime1.setText("0");        // TODO add your handling code here:
     }//GEN-LAST:event_BtnTripTime1ActionPerformed
 
     private void BtnTotAmount1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnTotAmount1ActionPerformed
@@ -3510,14 +3441,6 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
               // TODO add your handling code here:
     }//GEN-LAST:event_BtnSave4ActionPerformed
 
-    private void radioTimeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_radioTimeMouseClicked
-      DistrRadio();      // TODO add your handling code here:
-    }//GEN-LAST:event_radioTimeMouseClicked
-
-    private void radioTimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioTimeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_radioTimeActionPerformed
-
     private void radioImproActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_radioImproActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_radioImproActionPerformed
@@ -3544,45 +3467,6 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
         } 
       // TODO add your handling code here:
     }//GEN-LAST:event_BtnSave5ActionPerformed
-
-    private void btnCalculateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculateMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalculateMouseClicked
-
-    private void btnCalculateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculateActionPerformed
-  S1.setText("12321");
-       S2.setText("6133"); 
-        S3.setText("13819");
-         S4.setText("6662");
-          S5.setText("1505");
-           S6.setText("10375");
-            S7.setText("14657");
-             S8.setText("28985");
-              C0.setText("0,17");
-       C1.setText("0,08"); 
-        C2.setText("0,19");
-         C3.setText("0,09");
-          C4.setText("0,02");
-           C5.setText("0,14");
-            C6.setText("0,20");
-             C7.setText("0,40");
-             C15.setText("17 %");
-       C8.setText("8%"); 
-        C9.setText("19%");
-         C10.setText("9%");
-          C11.setText("2%");
-           C12.setText("14%");
-            C13.setText("20 %");
-             C14.setText("40 %");
-             C60.setText("");
-                 C61.setText("Non retenu ");    C62.setText("");    C63.setText("Non retenu ");    C64.setText("Non retenu ");    C65.setText("");
-                     C66.setText("");    C67.setText("");
-                 
-                 
-                 
-                 
-       // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalculateActionPerformed
 // redaction without diplicates p
   static boolean test2;
     private void BtnElimin2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin2ActionPerformed
@@ -3733,9 +3617,131 @@ Object[] nums = ((DefaultTableModel) tableData1.getModel()).getDataVector().toAr
 
     private void BtnElimin3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin3ActionPerformed
    operationDataBase.loadMatrix(tablevndid,tableExtra,tableTime,tableMtaTax,tableImprovementSurcharge,tableTripDistance,tablePassangerCount,tableTotalAmount,tabMatrix);        // TODO add your handling code here:
+operationDataBase.loadMatrix2(tablevndid,tableTime,tableTripDistance,tablePassangerCount,tableTotalAmount,tabMatrix);
+
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+S1.setText("12321");
+       S2.setText("6133"); 
+        S3.setText("13819");
+         S4.setText("6662");
+          S5.setText("1505");
+           S6.setText("10375");
+            S7.setText("14657");
+             S8.setText("28985");
+              C0.setText("0,17");
+       C1.setText("0,08"); 
+        C2.setText("0,19");
+         C3.setText("0,09");
+          C4.setText("0,02");
+           C5.setText("0,14");
+            C6.setText("0,20");
+             C7.setText("0,40");
+             C15.setText("17 %");
+       C8.setText("8%"); 
+        C9.setText("19%");
+         C10.setText("9%");
+          C11.setText("2%");
+           C12.setText("14%");
+            C13.setText("20 %");
+             C14.setText("40 %");
+             C60.setText("");
+                 C61.setText("Non retenu ");    C62.setText("");    C63.setText("Non retenu ");    C64.setText("Non retenu ");    C65.setText("");
+                     C66.setText("");    C67.setText("");
+    
+
+
+
+
+
+
+
+
+
+
+
+Q1.setText("0,0014");
+       Q2.setText("0,0014"); 
+        Q3.setText("0,0014");
+         Q4.setText("0,0014");
+          Q5.setText("0,0053");
+           Q6.setText("0,0053");
+            Q7.setText("0,12");
+             Q8.setText("0,12");   
+            Q9.setText("0,0047");
+             Q11.setText("0,0047");  
+              Q12.setText("0,098"); 
+        Q13.setText("0,098");
+         Q14.setText("0,0039");
+          Q15.setText("0,0039");
+           Q16.setText("0,086");
+            Q17.setText("0,086");
+             Q18.setText("0,0078");
+               Q19.setText("0,0078");
+               
+               P1.setText("0,007");
+       P2.setText("0,006"); 
+        P3.setText("0,007");
+         P4.setText("0,0089");
+          P5.setText("0,027");
+           P6.setText("0,011");
+            P7.setText("0,567");
+             P8.setText("0,75");   
+            P9.setText("0,021");
+             R1.setText("0,020");
+             P11.setText("0,456");  
+              P12.setText("0,217"); 
+        P13.setText("0,024");
+         P14.setText("0,016");
+          P15.setText("0,528");
+           P16.setText("0,189");
+            P17.setText("0,034");
+             P18.setText("0,017");         
+       A1.setText("0,7 %"); 
+        A2.setText("0,6 %");
+         A3.setText("0,7 %");
+          A4.setText("0,89 %");
+           A5.setText("2,7 %");      
+            A6.setText("1,1 %");
+             A7.setText("2,7 %");
+             A8.setText("75 %");   
+            A9.setText("2,1 %");
+             A10.setText("2 %");
+             A11.setText("45,6 %");  
+              A12.setText("21,7 %"); 
+        A13.setText("2,4 %");
+         A14.setText("1,6 %");
+          A15.setText("52,8 %");
+           A16.setText("18,9 %");
+            A17.setText("3,4 %");
+             A18.setText("1,7 %");              
     }//GEN-LAST:event_BtnElimin3ActionPerformed
 
-    private void btnCalculate1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculate1ActionPerformed
+    private void BtnElimin4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnElimin4ActionPerformed
+operationDataBase.loadMatrix2(tablevndid,tableTime,tableTripDistance,tablePassangerCount,tableTotalAmount,tabMatrix); 
+
+
+
+
+
+
+
+
+
+
+
 Q1.setText("0,0014");
        Q2.setText("0,0014"); 
         Q3.setText("0,0014");
@@ -3791,19 +3797,8 @@ Q1.setText("0,0014");
            A16.setText("18,9 %");
             A17.setText("3,4 %");
              A18.setText("1,7 %");
-    }//GEN-LAST:event_btnCalculate1ActionPerformed
-
-    private void btnCalculate1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculate1MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalculate1MouseClicked
-
-    private void btnCalculate2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnCalculate2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalculate2MouseClicked
-
-    private void btnCalculate2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculate2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCalculate2ActionPerformed
+// TODO add your handling code here:
+    }//GEN-LAST:event_BtnElimin4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -3865,6 +3860,7 @@ Q1.setText("0,0014");
     private rojeru_san.RSButton BtnElimin;
     private rojeru_san.RSButton BtnElimin2;
     private rojeru_san.RSButton BtnElimin3;
+    private rojeru_san.RSButton BtnElimin4;
     private rojeru_san.RSButton BtnPCount;
     private rojeru_san.RSButton BtnPassCount;
     private rojeru_san.RSButton BtnRef;
@@ -3990,9 +3986,6 @@ Q1.setText("0,0014");
     private javax.swing.JLabel TxtResTripDist;
     private javax.swing.JLabel TxtResTripTime;
     private javax.swing.JLabel TxxtMinPasCount;
-    private rojeru_san.RSButton btnCalculate;
-    private rojeru_san.RSButton btnCalculate1;
-    private rojeru_san.RSButton btnCalculate2;
     private javax.swing.JSpinner dmin;
     private javax.swing.JSpinner extra;
     private javax.swing.ButtonGroup groupButton;
@@ -4007,7 +4000,6 @@ Q1.setText("0,0014");
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
@@ -4120,7 +4112,6 @@ Q1.setText("0,0014");
     private javax.swing.JRadioButton radioP;
     private javax.swing.JRadioButton radioPaymment;
     private javax.swing.JRadioButton radioPuloc;
-    private javax.swing.JRadioButton radioTime;
     private javax.swing.JRadioButton radioTotal;
     private javax.swing.JRadioButton radioTrip;
     private javax.swing.JRadioButton radioTripTime1;
@@ -4139,7 +4130,6 @@ Q1.setText("0,0014");
     private javax.swing.JTable tableTotalAmount;
     private javax.swing.JTable tableTripDistance;
     private javax.swing.JTable tablevndid;
-    private javax.swing.JSpinner timemin2;
     private javax.swing.JSpinner totalmax;
     private javax.swing.JSpinner totalmin;
     private javax.swing.JSpinner tr;

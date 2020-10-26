@@ -67,14 +67,7 @@ public class Tools {
         cd.setValue(Num7, "", "6");
         cd.setValue(Num8, "", "7");
         cd.setValue(Num9, "", "8");
-        JFreeChart chart=ChartFactory.createBarChart3D(Title, "Passenger", "Count", cd, PlotOrientation.VERTICAL, true, true, false);
-        CategoryPlot plot=chart.getCategoryPlot();
-        plot.setRangeGridlinePaint(Color.WHITE);
-        ChartFrame chartframe=new ChartFrame(Title, chart,true);
-        chartframe.setSize(1500,900);
-         //chartframe.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Images/Icon_NoSQL_SQL.jpg")));
-        chartframe.setLocationRelativeTo(null);
-        chartframe.setVisible(true);
+      
     }*/
       public void createFrameBarChart_PassengerCount(double[] Num1,String Title,int tailleTab)
     {
@@ -87,7 +80,7 @@ public class Tools {
         plot.setRangeGridlinePaint(Color.WHITE);
         ChartFrame chartframe=new ChartFrame(Title, chart,true);
         chartframe.setSize(1500,900);
-         //chartframe.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Images/Icon_NoSQL_SQL.jpg")));
+        
         chartframe.setLocationRelativeTo(null);
         chartframe.setVisible(true);
     }

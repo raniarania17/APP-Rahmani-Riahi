@@ -1397,24 +1397,9 @@ if(val2!=val && val2!=val1 && val2!=val3) // && val!=0.5
     
     }
   
-     public static int getcharInteger(String Column,String var1,String var2)
-    {
-        int i=0;
-        ConnectionDB.MongoDB.Connect_MongoDB("AppMaster");
-        DBCollection col=ConnectionDB.MongoDB.db.getCollection("taxi1");
-          DBCursor cursor=col.find();
-          while(cursor.hasNext()){
-            DBObject dbo= cursor.next();
-            String S_A_F=(String) dbo.get(Column);
-           if(!S_A_F.equals(var1) || !S_A_F.equals(var2));
-           {
-           i++;
-           }
-              
-        }
-    return i;
-    }
+ 
      /////////////////////////////////////////////////////////////////////////////////////////////////////////
+     //pour la matrice 
     int i=0; 
     public  void fillFautSearch(JTable table,Vector<ObjectId> list)
     {
@@ -1964,15 +1949,7 @@ if( min>val || val>max)
         table2.setModel(model);
      }
       
-        public static void elimateD(JTable tab1,JTable m)
-      {
-         ArrayList<JTable> dup;
-         dup = new ArrayList<>(Arrays.asList(tab1));
-         Hashtable<String , ArrayList<Integer>> diplicates = new Hashtable<>();
-        
-
-         HashSet<String> dupp= new HashSet<String>();
-      }
+      
       public static void loadMatrix(JTable tab1,JTable tab2,JTable tab3,JTable tab4,JTable tab5,JTable tab6,JTable tab7,JTable tab8,JTable Matrix)
       {
          ArrayList<JTable> rules;
@@ -2008,15 +1985,12 @@ if( min>val || val>max)
         }
        for(int i=0;i<8;i++){
            System.out.println("Rule"+(i+1) +"sup : "+support[i] + "--  conf : "+support[i]/counter);
-           
-         //ligne pour afficher toute les regle li la confiance ta3hem > 0,1 
-        // < 0,1 t9oul rah n2Liminihome 
 
        }
+       /*
       double[] s = new double[512];
       for(int i=0;i<512;i++)
            s[i] =  0.0;
-      
       
       int z;
       Hashtable<String, Integer> tt = new Hashtable<>();
@@ -2048,6 +2022,7 @@ if( min>val || val>max)
        //   System.out.println(pp + "-> : val1 : "+tt.get(pp)+" -- val2 : "+ ((double)tt.get(pp))/((double)counter));                ((double)support[Integer.parseInt(pp.substring(1))]))
         System.out.println(pp + " : support : "+((double)tt.get(pp))/((double)counter)+" -- confiance : "+ ((double)tt.get(pp))/support[Integer.parseInt(String.valueOf(pp.charAt(0)))]);
       }
+      
    double[] s2= new double[512];
       for(int i=0;i<512;i++)
            s2[i] =  0.0;
@@ -2082,10 +2057,118 @@ if( min>val || val>max)
         
        System.out.println(pp2 + " : support : "+((double)tt2.get(pp2))/((double)counter)+" -- confiance : "+ ((double)tt2.get(pp2))/support[Integer.parseInt(String.valueOf(pp2.charAt(0)))]);
       }
+      */
+      }
+      public static void loadMatrix2(JTable tab1,JTable tab2,JTable tab3,JTable tab4,JTable tab5,JTable Matrix)
+      {
+         ArrayList<JTable> rules;
+         rules = new ArrayList<>(Arrays.asList(tab1, tab2, tab3, tab4, tab5));
+         Hashtable<String , ArrayList<Integer>> matrix = new Hashtable<>();
+         
+         for (int i = 0; i<rules.size(); ++i){
+             JTable currentJtable2 = rules.get(i);
+             for(int k=0 ; k<currentJtable2.getRowCount();++k){
+                ObjectId currentObjectId2 =(ObjectId) currentJtable2.getModel().getValueAt(k,0);
+                String objId2 = currentObjectId2.toString();
+                if(! matrix.containsKey(objId2)){
+                    matrix.put(objId2, new ArrayList(Arrays.asList(0,0,0,0,0)));
+                }
+                matrix.get(objId2).set(i, 1);
+             }
+         }
+        Set<String> keys2 = matrix.keySet();
+        int finish2 = 100;
+        double[] support2 = new double[8];
+        for(int i=0;i<5;i++)
+           support2[i] =  0.0;
+        int counter2 = 0;
+        for(String k2 : keys2 ){
+            counter2++;
+            for (int i=0;i<5;++i){
+                support2[i] += matrix.get(k2).get(i);
+            }
+            //if(--finish == 0){
+            //    break;
+           // }
+            System.out.println(k2 + ": "+matrix.get(k2));
+        }
+        /*for(int i=0;i<5;i++){
+           System.out.println("Rule"+(i+1) +"sup : "+support[i] + "--  conf : "+support[i]/counter);
+
+       }*/
+      double[] s2 = new double[512];
+      for(int i=0;i<512;i++)
+           s2[i] =  0.0;
+      
+      int z2;
+      Hashtable<String, Integer> tt4 = new Hashtable<>();
+      
+      for(String k2 : keys2 ){
+          z2 = 0;
+        for(int i=0;i<4;++i){
+            for(int j=i+1;j<5;++j){
+                // mkach 2 1 , 1 flba9i 
+                if(matrix.get(k2).get(i) == 1 && matrix.get(k2).get(j) == 1){
+                    String tmp4 = Integer.toString(i) + "->" + Integer.toString(j);
+                    if (!tt4.containsKey(tmp4)){
+                        tt4.put(tmp4, 0);
+                    }
+                    tt4.put(tmp4, tt4.get(tmp4)+1);
+                }
+                z2++;
+            }
+        }
+      }
+       
+     
+      //==========display
+      Set<String> ss22 = tt4.keySet();
+      
+      for(String pp2 : ss22){
+          
+           //                                                                                           support[int(pp[0])] suuport  support[Integer.parseInt(pp.substring(0))]
+       //   System.out.println(pp + "-> : val1 : "+tt.get(pp)+" -- val2 : "+ ((double)tt.get(pp))/((double)counter));                ((double)support[Integer.parseInt(pp.substring(1))]))
+        System.out.println(pp2 + " : support : "+((double)tt4.get(pp2))/((double)counter2)+" -- confiance : "+ ((double)tt4.get(pp2))/support2[Integer.parseInt(String.valueOf(pp2.charAt(0)))]);
+      }
+   double[] s22= new double[512];
+      for(int i=0;i<512;i++)
+           s22[i] =  0.0;
+      
+      
+      int z22;
+      Hashtable<String, Integer> tt22 = new Hashtable<>();
+      
+      for(String k22 : keys2 ){
+          z22 = 0;
+        for(int i=0;i<4;++i){
+            for(int j=i+1;j<5;++j){
+                // mkach 2 1 , 1 flba9i 
+                if(matrix.get(k22).get(i) == 1 && matrix.get(k22).get(j) == 1){
+                    String tmp22 = Integer.toString(j) + "->" + Integer.toString(i);
+                    if (!tt22.containsKey(tmp22)){
+                        tt22.put(tmp22, 0);
+                    }
+                    tt22.put(tmp22, tt22.get(tmp22)+1);
+                }
+                z22++;
+            }
+        }
+      }
+     
+      //==========display
+      Set<String> ss222 = tt22.keySet();
+      System.out.println("CONTRAIRE");
+      for(String pp22 : ss222){
+           //                                                                                           support[int(pp[0])] suuport
+       //   System.out.println(pp + "-> : val1 : "+tt.get(pp)+" -- val2 : "+ ((double)tt.get(pp))/((double)counter));                ((double)support[Integer.parseInt(pp.substring(1))]))
+        
+       System.out.println(pp22 + " : support : "+((double)tt22.get(pp22))/((double)counter2)+" -- confiance : "+ ((double)tt22.get(pp22))/support2[Integer.parseInt(String.valueOf(pp22.charAt(0)))]);
+      }
       
       }
       
      //@SuppressWarnings("empty-statement")
+      // distribution time
       public static void searchTime(JTable table1,JTable table2 ,int min,int max)
       {
       DefaultTableModel model=(DefaultTableModel) table2.getModel();
@@ -2102,37 +2185,10 @@ if( min>val || val>max)
        //String tf=(String) tableData.getModel().getValueAt(i, 4);
         int tf2=(int) table1.getModel().getValueAt(i, 4);
                  
-          //  int pc=(int) table1.getModel().getValueAt(i, 5);
-          
-        /*    double td=(double) table1.getModel().getValueAt(i, 6);
-           
-            int rc=(int) table1.getModel().getValueAt(i, 7);
-           
-            String fwd=(String) table1.getModel().getValueAt(i, 8);
-            int plID=(int) table1.getModel().getValueAt(i, 9);
-            
-            int dlID=(int) table1.getModel().getValueAt(i, 10);
-           
-            int pt=(int) table1.getModel().getValueAt(i, 11);
-           
-            int fa=(int) table1.getModel().getValueAt(i, 12);
-           
-            double ext=(double) table1.getModel().getValueAt(i, 13);
-            
-            double mtx=(double) table1.getModel().getValueAt(i, 14);
-           
-            int tam=(int) table1.getModel().getValueAt(i, 15);
-          
-            int tla=(int) table1.getModel().getValueAt(i, 16);
-           
-            double impsur=(double) table1.getModel().getValueAt(i, 17);
-            
-            double ttam=(double) table1.getModel().getValueAt(i, 18);
-           
-           String cngsur=(String) table1.getModel().getValueAt(i, 19);*/
+       
            model.addRow(new Object[]{_ID,vndID,tpepdate,tpepofdate,tf2});
-           // zdte mhithem kamel mbghawcheeeeee 
-      } // mhit pc kanet mour tf2,cd,td,rc,fwd,plID,dlID,pt,fa,ext,mtx,tam,tla,impsur,ttam,cngsur
+          
+      } 
       }  
     
      
